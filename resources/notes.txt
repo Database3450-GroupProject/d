@@ -19,3 +19,9 @@ FRONTEND (PORT DEFAULT 3000)
 npx create-react-app app
 npm install react-bootstrap bootstrap react-router-dom
 npm start to start
+
+
+search and update display
+sort
+
+fill out query click button and show table

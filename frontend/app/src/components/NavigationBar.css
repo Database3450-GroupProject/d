@@ -1,0 +1,23 @@
+.NavigationBar {
+    justify-content: center;
+}
+
+.navbar-nav {
+    font-size: 25px;
+}
+
+.nav-link {
+    padding: 0 10px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
