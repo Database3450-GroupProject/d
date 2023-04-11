@@ -1,0 +1,21 @@
+DATABASE (MARIADB)
+1. start service 
+sudo systemctl start mariadb.service
+sudo mariadb
+2. select DATABASE
+use csi;
+3. list tables
+show tables;
+
+username = username
+password = password
+
+BACKEND (PORT 9000)
+http://localhost:9000
+npm install express mariadb cors
+npm init -y
+
+FRONTEND (PORT DEFAULT 3000)
+npx create-react-app app
+npm install react-bootstrap bootstrap react-router-dom
+npm start to start
