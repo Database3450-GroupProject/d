@@ -14,6 +14,7 @@ BACKEND (PORT 9000)
 http://localhost:9000
 npm install express mariadb cors
 npm init -y
+npm run dev
 
 FRONTEND (PORT DEFAULT 3000)
 npx create-react-app app
@@ -21,7 +22,22 @@ npm install react-bootstrap bootstrap react-router-dom
 npm start to start
 
 
-search and update display
-sort
 
-fill out query click button and show table
+
+
+
+
+
+        const ownerData = {
+            ownerID,
+            fname,
+            lname,
+            SSN,
+            numOfDependents,
+            income,
+            age,
+            profession,
+            citizen,
+            creditScore,
+            ownershipID,
+        };

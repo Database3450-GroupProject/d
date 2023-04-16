@@ -9,7 +9,27 @@ const AddAgent = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // TODO: handle form submission
+
+        const agentData = { agentID, fname, lname, agencyID };
+
+        fetch('http://localhost:9000/add-agent', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(agentData),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log('Success:', data);
+                setAgentID('');
+                setFname('');
+                setLname('');
+                setAgencyID('');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     };
 
     return (

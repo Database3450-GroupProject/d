@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import CustomTable from '../components/CustomTable';
 
-const ListAll = () => {
+const ListHome = () => {
     const [data, setData] = useState([]);
 
     const handleSubmit = (event) => {
@@ -46,12 +46,11 @@ const ListAll = () => {
                     <Button type="submit" className="mt-3">Submit</Button>
                 </div>
             </Form>
-
-            {data.length > 0 && (
-                <CustomTable data={data} columns={columns} />
-            )}
+            <div className='mt-3'>
+                {data.length > 0 && (<CustomTable data={data} columns={columns} />)}
+            </div>
         </div>
     );
 };
 
-export default ListAll;
+export default ListHome;

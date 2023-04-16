@@ -3,7 +3,7 @@ import './CustomTable.css'
 
 const CustomTable = ({ data, columns }) => {
   return (
-    <Table striped bordered hover>
+    <Table bordered hover>
       <thead>
         <tr>
           {columns.map((column) => (
